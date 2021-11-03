@@ -1,0 +1,550 @@
+//Burger
+@media screen and (max-width: 767px) {
+
+    //Burger and header
+
+    .header {
+        margin-top: 10%;
+    }
+
+    .container {
+        max-width: 360px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .header__body {
+        background-color: #000;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 0px 0px;
+        z-index: 3;
+    }
+
+    .header__mobile-btn {
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 39px;
+        margin-top: 1px;
+        height: 20px;
+        width: 30px;
+        margin-right: 20px;
+        cursor: pointer;
+
+        & span {
+            background-color: #fff;
+            width: 100%;
+            height: 2px;
+            transition: transform .3s, opacity .3s;
+            display: block;
+        }
+    }
+
+    .burger_active.header__mobile-btn span {
+
+        &:nth-child(2) {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        &:nth-child(1) {
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50%;
+        }
+
+        &:nth-child(3) {
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 50%;
+        }
+    }
+
+    .header__logo {
+        width: 124px;
+        height: 60px;
+    }
+
+    .header__menu {
+        position: absolute;
+        background-color: #000;
+        background-size: cover;
+        left: 0;
+        right: 0;
+        top: 100%;
+        transform: translateY(-190%);
+        z-index: 2;
+        display: none;
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & li {
+            font-family: 'Avenir';
+            font-weight: 500;
+            font-size: 22px;
+            padding-right: 60px;
+        }
+
+        & li:last-child {
+            margin-right: 60px;
+        }
+
+        & a {
+            color: #fff;
+        }
+
+        & a:hover {
+            color: #0376C3;
+        }
+    }
+
+    .header__menu.active {
+        transform: translateY(0%);
+        display: block;
+    }
+
+    .header__sociale {
+        display: none;
+    }
+
+    // Header Content
+
+    .header__content-wrap {
+        flex-direction: column;
+        padding: 0px 10px;
+        padding-bottom: 20px;
+        margin-top: 180px;
+    }
+
+    .header__content-title {
+        width: 100%;
+    }
+
+    .header__form {
+        width: 100%;
+    }
+
+    .header__content-text {
+
+        width: 100%;
+
+        & h1 {
+            font-size: 30px;
+        }
+    }
+
+    .header__content-text-about {
+        width: 100%;
+        top: 1px;
+    }
+
+    .header__content-indexes {
+
+        &-text {
+            margin-right: 10px;
+        }
+
+        &-text h3 {
+            font-size: 10px;
+        }
+
+        &-text p {
+            font-size: 14px;
+        }
+    }
+
+    .header__form {
+        top: 19px;
+        left: 2px;
+        width: 100%;
+        margin-bottom: 21px;
+    }
+
+    .header__form-wrap {
+        height: 560px;
+        width: 300px;
+        margin-top: 40px;
+    }
+
+    .header__form-input-select {
+        color: #1F1F1F;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #1F1F1F;
+    }
+
+    .header__form-input input {
+        font-size: 16px;
+        height: 80px;
+        width: 200px;
+    }
+
+    .header__form-input-select {
+        font-family: 'Avenir';
+        font-weight: 900;
+    }
+
+    .header__form-btn {
+        margin-top: 40px;
+
+
+        & button {
+            font-family: 'Avenir';
+            font-weight: 900;
+            font-size: 14px;
+            background: none;
+            border: none;
+            padding: 13px 32px;
+            background-color: #0376C3;
+            border: solid 1px;
+            border-color: #0376C3;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        & button:hover {
+            background-color: #fff;
+            color: #0376C3;
+        }
+
+        & p {
+            font-family: 'Avenir';
+            font-weight: 900;
+            font-size: 8px;
+            color: #333637;
+            text-align: left;
+            text-transform: capitalize;
+            margin-top: 25px;
+        }
+    }
+
+    .page__content-featers {
+        margin-top: 10px;
+    }
+
+    .page__content-featers-title {
+        flex-direction: column;
+
+        &-text {
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        &-about {
+            width: 100%;
+            margin-top: 60px;
+            left: 10px;
+        }
+
+        &-about p {
+            font-family: 'Avenir';
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: capitalize;
+            max-width: 470px;
+        }
+    }
+
+    .page__content-featers-title-text-title {
+        position: relative;
+        top: 45px;
+        left: 10px;
+        font-size: 50px;
+    }
+
+    .page__content-featers-title-text-about {
+        top: 50px;
+        left: 10px;
+    }
+
+    .page__content-featers-device {
+        flex-direction: column;
+    }
+
+    .page__content-featers-device-picter {
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+
+    .page__content-featers-device-img {
+        display: flex;
+        flex-direction: column-reverse;
+        top: -27px;
+        left: 11px;
+    }
+
+    .page__content-featers-device-img {
+        display: none;
+    }
+
+    .page__content-featers-device-img-mob {
+        display: block;
+    }
+
+    .page__content-featers-device-text {
+        margin-right: 0px;
+        width: 100%;
+        margin-top: 30px;
+        top: 0px;
+        left: 0px;
+
+        & h2 {
+            width: 100%;
+        }
+
+        & p {
+            width: 100%;
+        }
+    }
+
+    .page__content-applications {
+        margin-top: 50px;
+    }
+
+    .page__content-applications-title {
+        font-size: 50px;
+        left: -105px;
+    }
+
+    .page__content-applications-wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+
+        &-text {
+            margin-right: 190px;
+            margin-top: 40px;
+        }
+
+        &-text h2 {
+            font-size: 16px;
+        }
+    }
+
+    .page__content-technology {
+        margin-top: 50px;
+    }
+
+    .page__content-technology-content {
+        flex-direction: column;
+        position: relative;
+        left: -110px;
+
+        &-text {
+            width: 100%;
+        }
+
+        &-text h2 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        &-img {
+            width: 100%;
+        }
+    }
+
+    .page__content-technology-wrap {
+        flex-direction: column;
+
+        &-text1 {
+            left: 14px;
+        }
+
+        &-text3 {
+            left: 14px;
+            width: 271px;
+        }
+    }
+
+    .page__content-produkt {
+        margin-top: 60px;
+
+        &-title {
+            font-size: 50px;
+            left: 0px;
+        }
+    }
+
+    .page__content-produkt-pro-img {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    .page__content-produkt-pro-img-circle {
+        display: none;
+    }
+
+    .page__content-produkt-pro-charact {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    .page__content-produkt-pro-line {
+        display: none;
+    }
+
+    .page__content-produkt-pro {
+        flex-direction: column;
+    }
+
+    .page__content-produkt-mobile-img {
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+
+    .page__content-produkt-mobile-img-circle {
+        display: none;
+    }
+
+    .page__content-produkt-mobile-charact {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    .page__content-produkt-mobile-img-line {
+        display: none;
+    }
+
+    .page__content-produkt-mobile {
+        flex-direction: column;
+    }
+
+    .page__content-produkt-mobile-img img {
+        display: none;
+    }
+
+    .page__content-produkt-mobile-img-mob {
+        display: block;
+    }
+
+    .page__content-technology2-wrap {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .page__content-technology2-wrap-title {
+        width: 100%;
+        left: 0px;
+
+        & h2 {
+            font-size: 50px;
+        }
+
+        & p {
+            font-size: 22px;
+        }
+    }
+
+    .page__content-technology2-wrap-text {
+        width: 100%;
+        left: 0px;
+    }
+
+    .page__content-slider {
+        flex-direction: column;
+        margin-top: 60px;
+        left: 10px;
+    }
+
+    .page__content-slider-text {
+        position: relative;
+        width: 100%;
+        left: 0px;
+
+        & h2 {
+            font-size: 40px;
+        }
+    }
+
+    .page__content-cooperation {
+        display: none;
+    }
+
+    .page__content-end-wrap {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .page__content-end-wrap-text {
+
+        width: 100%;
+        margin-bottom: 0px;
+        left: 0px;
+
+        & h2 {
+            font-size: 50px;
+        }
+    }
+
+    .page__content-end-wrap-form {
+        left: 0px;
+    }
+
+    .page__content-end-wrap-form-content {
+        height: 580px;
+        width: 300px;
+        margin-top: 150px;
+        margin-bottom: -250px;
+    }
+
+    .page__content-end-footer-wrap {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -20px;
+    }
+
+    .footer-mobile-menu-list {
+        font-family: 'Avenir';
+        font-weight: 500;
+        display: inline-flex;
+        margin-top: 10px;
+        margin-left: -15px;
+
+        & li {
+            padding: 10px 0px;
+        }
+
+        & a {
+            color: #fff;
+        }
+    }
+
+    .footer-mobile-sociale {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .footer-mobile-sociale-linc {
+        color: #fff;
+        padding: 0px 20px;
+    }
+
+}

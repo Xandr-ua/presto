@@ -1,0 +1,137 @@
+.page__content-slider-wrap {
+    width: 703px;
+
+    &-conteiner {
+        width: 600px;
+    }
+}
+
+.slider__conteiner {
+    overflow: hidden;
+}
+
+.slider__track {
+    display: flex;
+}
+
+.wrap__item {
+    min-width: 600px;
+}
+
+.page__content-slider-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-pre {
+    border: solid 2px #fff;
+    border-radius: 100%;
+    padding: 10px;
+    margin-right: 10px;
+
+    &:hover {
+        color: #fff;
+        background-color: #0376C4;
+    }
+}
+
+.btn-next {
+    border: solid 2px #fff;
+    border-radius: 100%;
+    padding: 10px;
+
+    &:hover {
+        color: #fff;
+        background-color: #0376C4;
+    }
+}
+
+.page__content-slider-wrap-track-content {
+
+    & p {
+        font-family: 'Pier Sans';
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    & h3 {
+        font-family: 'Avenir';
+        font-weight: 900;
+        font-size: 22px;
+    }
+
+    & h4 {
+        font-family: 'Avenir';
+        font-weight: 500;
+        font-size: 18px;
+        color: #858585;
+    }
+}
+
+.page__content-slider-wrap-track-content2 {
+
+    & p {
+        font-family: 'Pier Sans';
+        font-weight: 900;
+        font-size: 30px;
+        color: aqua;
+    }
+
+    & h3 {
+        font-family: 'Avenir';
+        font-weight: 900;
+        font-size: 22px;
+    }
+
+    & h4 {
+        font-family: 'Avenir';
+        font-weight: 500;
+        font-size: 18px;
+        color: #858585;
+    }
+}
+
+.page__content-slider-wrap-track-content3 {
+
+    & p {
+        font-family: 'Pier Sans';
+        font-weight: 900;
+        font-size: 30px;
+        color: blueviolet;
+    }
+
+    & h3 {
+        font-family: 'Avenir';
+        font-weight: 900;
+        font-size: 22px;
+    }
+
+    & h4 {
+        font-family: 'Avenir';
+        font-weight: 500;
+        font-size: 18px;
+        color: #858585;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .page__content-slider-wrap {
+        width: 100%;
+
+        &-conteiner {
+            width: 100%;
+        }
+    }
+
+    .wrap__item {
+
+        min-width: 200px;
+
+        & p {
+            font-size: 20px;
+            width: 320px;
+        }
+    }
+}
